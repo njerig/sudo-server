@@ -5,7 +5,9 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [http-kit "2.3.0"]
-                 [compojure "1.6.1"]]
+                 [compojure "1.6.1"]
+                 [environ "1.2.0"]
+                 [lein-environ "0.4.0"]]
   :main ^:skip-aot sudo-server.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
