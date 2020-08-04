@@ -14,7 +14,7 @@
 
 (def options 
   {:headers {"Content-Type" "application/json"
-             "Authorization" (str "api-key" PRIVACY_API_URL)}})
+             "Authorization" (str "api-key " PRIVACY_API_URL)}})
 
 (defn get-cards [req]
   (let [resp @(client/get (str PRIVACY_API_URL "/v1/card") options)]
